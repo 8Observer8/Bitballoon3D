@@ -230,12 +230,16 @@ export default class Game
         // Sounds
         this._lose = new Audio();
         this._lose.src = "lose.wav";
+        this._lose.volume = 0.3;
         this._shoot = new Audio();
         this._shoot.src = "shoot.wav";
+        this._shoot.volume = 0.2;
         this._win = new Audio();
         this._win.src = "win.wav";
+        this._win.volume = 0.3;
         this._song = new Audio();
         this._song.src = "song.mp3";
+        this._song.volume = 0.3;
 
         $(document).keydown((e) =>
         {
