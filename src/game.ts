@@ -243,13 +243,11 @@ export default class Game
 
         $(document).keydown((e) =>
         {
-            console.log("$(document).keydown " + e.keyCode);
             this._keys[e.keyCode ? e.keyCode : e.which] = true;
         });
 
         $(document).keyup((e) =>
         {
-            console.log("$(document).keyup");
             delete this._keys[e.keyCode ? e.keyCode : e.which];
         });
 
